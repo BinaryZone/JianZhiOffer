@@ -34,6 +34,7 @@ public class Offer08 {
 	// 简化代码
 	public TreeLinkNode GetNext1(TreeLinkNode pNode)
     {
+		// 该结点有右子树
         if (pNode.right != null) {
 			TreeLinkNode rightNode = pNode.right;
 			while(rightNode.left != null) {
@@ -41,6 +42,7 @@ public class Offer08 {
 			}
 			return rightNode;
 		}
+        // 该结点无右子树，注意需要分该结点是其父结点的左子节点和右子结点的不同情况。
         while(pNode.next != null) {
         	if (pNode.next.left == pNode) {
 				return pNode.next;
@@ -50,7 +52,6 @@ public class Offer08 {
         return null;
     }
 }
-
 class TreeLinkNode {
     int val;
     TreeLinkNode left = null;
