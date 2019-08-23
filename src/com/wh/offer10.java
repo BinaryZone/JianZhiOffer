@@ -1,6 +1,6 @@
 package com.wh;
 
-public class offer10 {
+public class Offer10 {
 	//ตÝน้
 	public static int fibonacci(int n) {
 		if (n<=0) {

@@ -79,6 +79,6 @@ public class Offer40 {
 	}
 	public static void main(String[] args) {
 		int[] arr = {4,5,1,6,2,7,3,8};
-		System.out.println(GetLeastNumbers_Solution1(arr, 4));
+		System.out.println(GetLeastNumbers_Solution2(arr, 4));
 	}
 }

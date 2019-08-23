@@ -73,13 +73,16 @@ public class Offer39 {
 				times--;
 			}
 		}
-		int count = 0;
-		for(int i = 0;i < array.length;i++) {
-			if (array[i] == result) {
-				count++;
-			}
-		}
-		if (count > array.length >> 1) {
+//		int count = 0;
+//		for(int i = 0;i < array.length;i++) {
+//			if (array[i] == result) {
+//				count++;
+//			}
+//		}
+//		if (count > array.length >> 1) {
+//			return result;
+//		}
+		if (times >= 2) {
 			return result;
 		}
 		return 0;

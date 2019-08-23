@@ -8,7 +8,7 @@ import java.util.Arrays;
  * @author DELL
  *
  */
-public class offer03_1 {
+public class Offer03_1 {
 	// 哈希表，O(n)时间复杂度，O(n)空间复杂度
 	public boolean duplicate(int numbers[],int length,int [] duplication) {
 	    boolean[] k = new boolean[length];
@@ -38,6 +38,6 @@ public class offer03_1 {
 	}
 	public static void main(String[] args) {
 		int[] numbers = {2,1,3,1,4};
-		System.out.println(new offer03_1().duplicate1(numbers, 5, new int[1]));
+		System.out.println(new Offer03_1().duplicate1(numbers, 5, new int[1]));
 	}
 }
